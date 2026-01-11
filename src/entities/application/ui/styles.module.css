@@ -37,7 +37,7 @@
   max-height: 600px;
 }
 
-.content::after {
+.contentCompact::after {
   content: '';
   position: absolute;
   bottom: 0;

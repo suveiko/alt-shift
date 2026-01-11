@@ -2,11 +2,20 @@
 
 ALT+SHIFT - a modern web application for generating job applications using AI.
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://alt-shit.netlify.app/)
+[![Storybook](https://img.shields.io/badge/Storybook-Live-FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://alt-shift-storybook.netlify.app/)
+
 ## 🚀 Quick Start
 
 ```bash
 # Install dependencies
 pnpm install
+
+# Create .env file from example
+cp .env.example .env
+
+# Add your OpenAI API key to .env
+# VITE_OPENAI_API_KEY=your-api-key-here
 
 # Run dev server
 pnpm dev
@@ -66,7 +75,7 @@ src/
 UI component documentation is available in Storybook:
 
 - **Local**: `pnpm storybook` → http://localhost:6006
-- **Production**: Automatically deployed to Netlify
+- **Production**: [https://alt-shift-storybook.netlify.app/](https://alt-shift-storybook.netlify.app/) 🎨✨
 
 ## 🧪 Testing
 
@@ -82,6 +91,22 @@ pnpm test:unit --run  # single run
 ```bash
 pnpm test:e2e
 ```
+
+## ⚙️ Environment Variables
+
+Create a `.env` file from `.env.example`:
+
+```bash
+cp .env.example .env
+```
+
+Required variables:
+
+- `VITE_OPENAI_API_URL` - OpenAI API base URL (default: `https://api.openai.com`)
+- `VITE_OPENAI_API_KEY` - Your OpenAI API key (required for production)
+- `VITE_OPENAI_MODEL` - OpenAI model to use (default: `gpt-4-turbo-preview`)
+
+**Note**: The app will work without env variables (using mocked API responses), but you need a real API key for production use.
 
 ## 📝 Requirements
 
