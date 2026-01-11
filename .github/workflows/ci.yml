@@ -75,6 +75,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    environment: prod
     steps:
       - uses: actions/checkout@v4
       
@@ -162,6 +163,7 @@ jobs:
 
   deploy-app:
     runs-on: ubuntu-latest
+    environment: prod
     needs: [typecheck, unit, build, e2e]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
@@ -187,6 +189,7 @@ jobs:
 
   deploy-storybook:
     runs-on: ubuntu-latest
+    environment: prod
     needs: [typecheck, unit, build, e2e]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:

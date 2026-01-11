@@ -141,9 +141,6 @@ importers:
       playwright:
         specifier: ^1.57.0
         version: 1.57.0
-      pnpm:
-        specifier: ^10.15.0
-        version: 10.26.2
       prettier:
         specifier: ^3.3.3
         version: 3.7.4
@@ -2870,11 +2867,6 @@ packages:
   pngjs@7.0.0:
     resolution: {integrity: sha512-LKWqWJRhstyYo9pGvgor/ivk2w94eSjE3RGVuzLGlr3NmD8bf7RcYGze1mNdEHRP6TRP6rMuDHk5t44hnTRyow==}
     engines: {node: '>=14.19.0'}
-
-  pnpm@10.26.2:
-    resolution: {integrity: sha512-DjCP8gBfx0EDZvFU9iX2YxqysWsdLnAjhETdaunWMKhILZKkURRN68SSQWiW7Rb3sRSobsaLhASyRDhp5o/9pg==}
-    engines: {node: '>=18.12'}
-    hasBin: true
 
   possible-typed-array-names@1.1.0:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
@@ -6434,8 +6426,6 @@ snapshots:
   pluralize@8.0.0: {}
 
   pngjs@7.0.0: {}
-
-  pnpm@10.26.2: {}
 
   possible-typed-array-names@1.1.0: {}
 

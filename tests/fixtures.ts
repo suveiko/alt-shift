@@ -4,7 +4,7 @@ export const test = base.extend({
   page: async ({ page }, use) => {
     // Mock OpenAI API before each test
     await page.route(
-      'https://api.openai.com/v1/chat/completions',
+      (url) => url.pathname.includes('/v1/chat/completions'),
       async (route) => {
         // Simulate processing time
         await new Promise((resolve) => {

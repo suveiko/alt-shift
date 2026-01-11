@@ -1,6 +1,6 @@
 # Variant group test task
 
-Application Generator - a modern web application for generating job applications using AI.
+ALT+SHIFT - a modern web application for generating job applications using AI.
 
 ## 🚀 Quick Start
 
