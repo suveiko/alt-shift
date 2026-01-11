@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-2xl) 0;
+  justify-content: space-between;
+  background-color: var(--color-background);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.progress {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .header {
+    gap: var(--spacing-sm);
+  }
+
+  .rightSection {
+    gap: var(--spacing-sm);
+  }
+}

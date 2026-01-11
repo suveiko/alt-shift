@@ -1,0 +1,8 @@
+# Storybook deployment
+[build]
+  command = "pnpm build-storybook"
+  publish = "storybook-static"
+
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_VERSION = "9.0.0"
